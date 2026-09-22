@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+BACKGROUND
+========================= */
+
+.background {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 38%,
+            #63d8f2 0%,
+            #188eae 24%,
+            #07506d 48%,
+            #022c42 70%,
+            #010f1c 100%);
+}
+
+.atmospheric-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(168, 226, 240, 0.4) 0%,
+            rgba(35, 142, 173, 0.15) 40%,
+            rgba(0, 19, 31, 0.75) 100%);
+}
+
+.center-light {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(91, 220, 255, 0.2), transparent 38%);
+}
+
+.dark-edges {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 15, 25, 0.48) 100%);
+}
+
+/* =========================
+GLASS NAV
+========================= */
+
+.glass-nav {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+TITLE
+========================= */
+
+.title-shine {
+    background: linear-gradient(180deg, #ffffff 0%, #e8fbff 45%, #8ed5e8 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* =========================
+WATER TEXT
+========================= */
+
+.water-text {
+    color: rgba(225, 250, 255, 0.92);
+
+    text-shadow:
+        0 0 15px rgba(90, 210, 240, 0.5),
+        0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* =========================
+SOCIAL LINE
+========================= */
+
+.social-line::before {
+    content: "";
+
+    width: 1px;
+    height: 55px;
+
+    margin-bottom: 22px;
+
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.75), transparent);
+}
+
+/* Background */
+.background {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 38%,
+            #63d8f2 0%,
+            #188eae 24%,
+            #07506d 48%,
+            #022c42 70%,
+            #010f1c 100%);
+}
+
+/* Blue Atmospheric Overlay */
+.atmospheric-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(168, 226, 240, 0.4) 0%,
+            rgba(35, 142, 173, 0.15) 40%,
+            rgba(0, 19, 31, 0.75) 100%);
+}
+
+/* Center Light */
+.center-light {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(91, 220, 255, 0.2), transparent 38%);
+}
+
+/* Soft Dark Edges */
+.dark-edges {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 15, 25, 0.48) 100%);
+}
